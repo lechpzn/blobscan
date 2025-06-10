@@ -38,7 +38,7 @@ const slotType = (input: string): number => {
 const dateType = (input: string): string => {
   const date = dayjs.utc(input);
   if (!date.isValid()) {
-    throw new Error(`Invalid date "${input}". Expected a ISO 8601 date.`);
+    throw new Error(`Invalid date "${input}". Expected an ISO 8601 date.`);
   }
 
   return date.format();
